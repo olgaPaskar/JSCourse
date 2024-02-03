@@ -1,4 +1,4 @@
-function message() {
+function printMessage() {
     console.log("Hello, friends!")
 }
-message()
+printMessage()
