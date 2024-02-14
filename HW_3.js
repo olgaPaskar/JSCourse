@@ -16,18 +16,19 @@
     // 4 8 12 16 20
     // 5 10 15 20 25
  */
-const multiplyTable = () => {
+const num = 11;
+const multiplyTable = (num) => {
     let result = '\n';
-    for (let i = 1; i < 11; i++) {
-        for (let j = 1; j < 11; j++) {
+    for (let i = 1; i < num; i++) {
+        for (let j = 1; j < num; j++) {
             result += (i * j) + ' ';
         }
         result += '\n'
     }
     return result;
 }
-multiplyTable(11)
-console.log(multiplyTable())
+
+console.log(multiplyTable(num))
 
 
 // 2
