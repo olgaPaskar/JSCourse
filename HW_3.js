@@ -16,7 +16,7 @@
     // 4 8 12 16 20
     // 5 10 15 20 25
  */
-const num = 11;
+
 const multiplyTable = (num) => {
     let result = '\n';
     for (let i = 1; i < num; i++) {
@@ -28,7 +28,11 @@ const multiplyTable = (num) => {
     return result;
 }
 
-console.log(multiplyTable(num))
+console.log(multiplyTable(11))
+console.log(multiplyTable(2))
+console.log(multiplyTable(7))
+console.log(multiplyTable(10))
+console.log(multiplyTable(20))
 
 
 // 2
@@ -45,7 +49,7 @@ console.log(multiplyTable(num))
   // Вывод: 120 (1 * 2 * 3 * 4 * 5)
  */
 
-let n = 5;
+
 const calculateFactorial = (n) => {
     let num = 1;
 
@@ -56,7 +60,12 @@ const calculateFactorial = (n) => {
     return num;
 }
 
-console.log(calculateFactorial(n));
+console.log(calculateFactorial(25));
+console.log(calculateFactorial(7));
+console.log(calculateFactorial(14));
+console.log(calculateFactorial(74));
+console.log(calculateFactorial(63));
+
 
 //3
 /*
@@ -77,15 +86,18 @@ console.log(calculateFactorial(n));
  // Вывод: 3 (вместо ожидаемого 3.003)
 
 */
-const num1 = 5.3335;
-const num2 = 97.2574;
-const addWithLoss = (num1, num2) => {
+
+const addWithLoss = (num1, num2, roundNumArg = 1) => {
     const sum = num1 + num2;
-    const sum1 = sum.toFixed(1)
-    return sum1;
+    return sum.toFixed(roundNumArg)
 
 }
-console.log(addWithLoss(num1, num2))
+console.log(addWithLoss(5.97, 112.4587))
+console.log(addWithLoss(5.95, 4.32))
+console.log(addWithLoss(39.48, 71.45))
+console.log(addWithLoss(144.95, 52.34))
+console.log(addWithLoss(87.2, 91.412547))
+
 
 
 //4
@@ -104,13 +116,17 @@ processText("Another Example");
 // Вывод: "xXother exXmple"
 
 */
-const message = " Hallo, Worlda "
 
-const processText = () => {
+const processText = (message) => {
 
     return message.trim().toLowerCase().replaceAll('a', 'x')
 }
-console.log(processText())
+console.log(processText(' Hallo Worlda '))
+console.log(processText(' analizing '))
+console.log(processText(' ua ua ua '))
+console.log(processText(' happi '))
+console.log(processText(' dreaaaaame '))
+
 
 //5
 
@@ -137,35 +153,42 @@ console.log(processText())
 */
 
 
-const newString = 'Hello, world!';
-const key = 9;
 
-const encode_string =  (newString, key) => {
+const key = 9;
+const targetStr  = "Hello, world!";
+
+const encodeString =  (targetStr , key) => {
     let encodedStr = '';
-    for (let i = 0; i < newString.length; i++) {
-        let code = newString.charCodeAt(i) + key;
+    for (let i = 0; i < targetStr .length; i++) {
+        let code = targetStr .charCodeAt(i) + key;
         let encodedChar = String.fromCharCode(code);
         encodedStr += encodedChar;
     }
     return encodedStr;
 }
 
-console.log(encode_string (newString, key));
+console.log(encodeString (targetStr , key));
 
-const newString1 = 'Qnuux5)x{um*';
-const key1 = 9;
-const decode_string = (newString1, key1) => {
 
-    let encodedStr1 = '';
-    for (let i = 0; i < newString1.length; i++) {
-        let code1 = newString1.charCodeAt(i) - key1;
+
+
+const codeKey = 9
+const encoded = encodeString("Hello, world!", codeKey);
+
+
+const decodeString = (encoded, codeKey) => {
+
+    let encodedStr = '';
+    for (let i = 0; i < encoded.length; i++) {
+        let code1 = encoded.charCodeAt(i) - codeKey;
         let encodedChar1 = String.fromCharCode(code1);
-        encodedStr1 += encodedChar1;
+        encodedStr += encodedChar1;
     }
-    return encodedStr1;
+    return encodedStr;
 }
+const decoded = decodeString(encoded, codeKey)
 
-console.log(decode_string(newString1, key1));
+console.log(decodeString(encoded,codeKey));
 
 
 
