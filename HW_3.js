@@ -154,8 +154,6 @@ console.log(processText(' dreaaaaame '))
 
 
 
-const key = 9;
-const targetStr  = "Hello, world!";
 
 const encodeString =  (targetStr , key) => {
     let encodedStr = '';
@@ -167,7 +165,7 @@ const encodeString =  (targetStr , key) => {
     return encodedStr;
 }
 
-console.log(encodeString (targetStr , key));
+console.log(encodeString ("Hello, world!" , 9));
 
 
 
