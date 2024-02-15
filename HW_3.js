@@ -51,7 +51,7 @@ const calculateFactorial = (n) => {
 
     if (n === 0)
         return 1;
-    for (let i = 2; i <= n; i++)
+    for (let i = 1; i <= n; i++)
         num = num * i;
     return num;
 }
@@ -77,14 +77,15 @@ console.log(calculateFactorial(n));
  // Вывод: 3 (вместо ожидаемого 3.003)
 
 */
-
-const addWithLoss = () => {
-    const num1 = 5.3335;
-    const num2 = 97.2574;
-    return num1 + num2
+const num1 = 5.3335;
+const num2 = 97.2574;
+const addWithLoss = (num1, num2) => {
+    const sum = num1 + num2;
+    const sum1 = sum.toFixed(1)
+    return sum1;
 
 }
-console.log(addWithLoss().toFixed(1))
+console.log(addWithLoss(num1, num2))
 
 
 //4
@@ -105,11 +106,11 @@ processText("Another Example");
 */
 const message = " Hallo, Worlda "
 
-const processText = (message) => {
+const processText = () => {
 
     return message.trim().toLowerCase().replaceAll('a', 'x')
 }
-console.log(processText('Hallo, Worlda'))
+console.log(processText())
 
 //5
 
@@ -139,7 +140,7 @@ console.log(processText('Hallo, Worlda'))
 const newString = 'Hello, world!';
 const key = 9;
 
-const encode_string_url_encoded =  (newString, key) => {
+const encode_string =  (newString, key) => {
     let encodedStr = '';
     for (let i = 0; i < newString.length; i++) {
         let code = newString.charCodeAt(i) + key;
@@ -149,23 +150,22 @@ const encode_string_url_encoded =  (newString, key) => {
     return encodedStr;
 }
 
-console.log(encode_string_url_encoded (newString, key));
+console.log(encode_string (newString, key));
 
+const newString1 = 'Qnuux5)x{um*';
+const key1 = 9;
+const decode_string = (newString1, key1) => {
 
-const decode_string = (encodedString, key) => {
-    const decodedStr = decodeURIComponent(encodedString.replace(/-/g, '+').replace(/_/g, '/'));
-    const decodedCharCode = (charCode) => String.fromCharCode(charCode - key);
-    return decodedStr.split('').map(char => decodedCharCode(char.charCodeAt(0))).join('');
-};
+    let encodedStr1 = '';
+    for (let i = 0; i < newString1.length; i++) {
+        let code1 = newString1.charCodeAt(i) - key1;
+        let encodedChar1 = String.fromCharCode(code1);
+        encodedStr1 += encodedChar1;
+    }
+    return encodedStr1;
+}
 
-const encodedString = encode_string_url_encoded('Hello, world!', 9);
-const decodedString = decode_string(encodedString, 9);
-console.log(decodedString);
-
-
-
-
-
+console.log(decode_string(newString1, key1));
 
 
 
