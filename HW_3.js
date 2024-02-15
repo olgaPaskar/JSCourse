@@ -51,14 +51,16 @@ console.log(multiplyTable(20))
 
 
 const calculateFactorial = (n) => {
-    let num = 1;
 
-    if (n === 0)
-        return 1;
+    let factorial = 1;
+    if (n === 0 || n === 1)
+        return factorial;
     for (let i = 1; i <= n; i++)
-        num = num * i;
-    return num;
+        factorial *= i;
+    return factorial;
 }
+
+
 
 console.log(calculateFactorial(25));
 console.log(calculateFactorial(7));
