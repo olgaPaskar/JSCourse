@@ -165,14 +165,6 @@ const encodeString =  (targetStr , key) => {
     return encodedStr;
 }
 
-console.log(encodeString ("Hello, world!" , 9));
-
-
-
-
-const codeKey = 9
-const encoded = encodeString("Hello, world!", codeKey);
-
 
 const decodeString = (encoded, codeKey) => {
 
@@ -184,9 +176,11 @@ const decodeString = (encoded, codeKey) => {
     }
     return encodedStr;
 }
+const codeKey = 9
+const encoded = encodeString("Hello, world!", codeKey);
 const decoded = decodeString(encoded, codeKey)
 
-console.log(decodeString(encoded,codeKey));
+console.log(encoded,decoded);
 
 
 
