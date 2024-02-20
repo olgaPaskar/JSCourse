@@ -8,7 +8,7 @@ const person = {
     houseNum: 52
 }
 
-const getNewFunction = (person) => {
+const getValuesAverage = (person) => {
     let sum = 0;
     let count = 0;
 
@@ -20,8 +20,7 @@ const getNewFunction = (person) => {
     }
     return count > 0 ? sum / count : 0;
 }
-console.log(getNewFunction(person))
-
+console.log(getValuesAverage(person))
 
 
 //Необходимо создать функцию formatDate,
@@ -42,19 +41,18 @@ console.log(getNewFunction(person))
 
 
 const formatDate = (date) => {
-        const year = date.getFullYear();
-        const month = (date.getMonth() + 1).toString().padStart(2, '0');
-        const day = date.getDate().toString().padStart(2, '0');
-        const hours = date.getHours().toString().padStart(2, '0');
-        const minutes = date.getMinutes().toString().padStart(2, '0');
-        const seconds = date.getSeconds().toString().padStart(2, '0');
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const seconds = date.getSeconds().toString().padStart(2, '0');
 
-        return `${day}.${month}.${year}, ${hours}:${minutes}:${seconds}`;
-    }
+    return `${day}.${month}.${year}, ${hours}:${minutes}:${seconds}`;
+}
 
-    const now = new Date();
+const now = new Date();
 console.log(formatDate(now));
-
 
 
 /*
@@ -68,14 +66,16 @@ console.log(formatDate(now));
 
 
 const customAssign = (target, source) => {
-     for (let key in source) {
-             target[key] = source[key]; }
-     return target;
+    for (let key in source) {
+        target[key] = source[key];
+    }
+    return target;
 }
-const target = { name: 'Ameli', age: 25 };
-const source = { name: 'Olga', c: 5 };
+const target = {name: 'Ameli', age: 25};
+const source = {name: 'Olga', c: 5};
 
-    console.log(customAssign(target, source))
+console.log(customAssign(target, source))
+
 
 
 
