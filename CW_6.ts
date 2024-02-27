@@ -10,7 +10,7 @@ const a4: number[] = [1, 2, 3]
 const a5: Array<string> = ["1", "2", "3"]
 const a6: [string, string] = ["dsf", 'cldgjd']
 const a7: [boolean, number] = [false, 25]
-const a8: [number[], Array<string>] = [[25], [gyig]]
+const a8: [number[], Array<string>] = [[25], ['gyig']]
 
 
 //Укажите типы, чтобы не было ошибок компиляции
