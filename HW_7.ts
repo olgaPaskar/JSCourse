@@ -43,7 +43,7 @@ type UserName = Pick<UserData, 'name'>;
 
 */
 
-function mergeObjects<T, U>(obj1: T, obj2: U): T & U {
+function mergeObjects<T, U>(obj1: T, obj2: U): ReturnType<() => T & U> {
     return { ...obj1, ...obj2 };
 }
 
