@@ -1,0 +1,297 @@
+/* CSS для больших экранов */
+@media only screen and (min-width: 1440px) {
+    .wrapper {
+        width: 1440px;
+        height: 1777px;
+        top: -512px;
+        left: -720px;
+    }
+}
+
+/* CSS для маленьких экранов */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 768px;
+        height: 1802px;
+        top: -551px;
+        left: 2470px;
+    }
+}
+header {
+    width: 1440px;
+    height: 90px;
+    background: #0C0C0E;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+h1 {
+    width: 294px;
+    height: 50px;
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    font-family: Candara Light, serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: white; /* Цвет текста белый */
+    white-space: nowrap;
+}
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Выравнивание текста по правому краю */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px; /* Расстояние между пунктами меню */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Убрать отступ слева для первого пункта меню */
+}
+
+nav ul li a {
+    font-family: Candara Light, serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF; /* Цвет текста */
+    text-decoration: none;
+    padding: 0 10px; /* Добавлено отступ справа и слева */
+    line-height: 50px; /* Выравнивание по центру вертикально */
+}
+
+nav ul li a:hover {
+    color: #CCCCCC; /* Цвет текста при наведении */
+}
+#welcome {
+    width: 1440px;
+    height: 600px;
+    top: 90px;
+    background-image: url('./picter/85c1859f825ed82614b2036bc8be037f (1).jpg');
+    background-size: cover;
+    background-position: center;
+}
+.welcome-content {
+    width: 600px;
+    height: 170px;
+    top: 220px;
+    padding: 35px 40px;
+    background: #0C0C0E;
+    position: relative; /* Добавлено */
+}
+
+.welcome-content h2 {
+    color: white; /* Цвет текста */
+    font-size: 40px; /* Размер текста */
+    font-weight: normal; /* Обычный текст */
+    text-align: center; /* Выравнивание текста по центру */
+    line-height: 1.5; /* Межстрочный интервал */
+    word-spacing: 0; /* Расстояние между словами */
+    position: absolute; /* Добавлено */
+    top: 5px; /* Отрицательный отступ для поднятия текста */
+    left: 50%; /* Выравнивание текста по горизонтали */
+    transform: translateX(-50%); /* Смещение текста влево на половину ширины блока */
+}
+#about {
+    text-align: center; /* Выравнивание текста по центру */
+    margin-bottom: 50px;
+}
+
+#about h2 {
+    position: relative; /* Позиционирование элемента */
+    display: inline-block; /* Сделать элемент блочным и сохранить его размеры */
+}
+
+#about h2::after {
+    content: ''; /* Добавление пустого контента */
+    position: absolute; /* Позиционирование относительно родительского элемента */
+    bottom: -5px; /* Расстояние от нижнего края заголовка */
+    left: 50%; /* Расположение подчеркивания в середине */
+    transform: translateX(-50%); /* Центрирование подчеркивания */
+    width: 50px; /* Ширина подчеркивания */
+    height: 1px; /* Высота подчеркивания */
+    background-color: black; /* Цвет подчеркивания */
+}
+
+.button-container {
+    position: relative;
+    margin-top: 20px; /* Отступ от изображений */
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.brown-btn {
+    background-color: #BB945F;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+}
+
+.black-btn {
+    background-color: black;
+    color: white;
+    width: 16px;
+    height: 16px;
+}
+footer {
+    background-color: #000000; /* черный цвет фона */
+    width: 1440px;
+    height: 250px;
+    position: relative; /* позиционирование */
+    top: 0; /* прижимаем к верху блока welcome */
+    margin-top: 20px; /* устанавливаем отступ от блока welcome */
+}
+
+.footer-inner {
+    width: 1400px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    justify-content: space-between;/* Цвет текста */
+}
+.footer-container {
+    width: 1400px;
+    height: 90px;
+    top: 20px;
+    left: 20px;
+    gap: 10px;
+}
+
+.address-block {
+    width: 229px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    left: -100px;
+}
+.address-block p {
+    word-wrap: break-word; /* Разрешает переносить слова при необходимости */
+}
+.spacer {
+    flex-grow: 1; /* Пустой блок занимает всё доступное пространство */
+}
+
+.schedule-block {
+    width: 149px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: white; /* Цвет текста */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Отступ от верхнего края */
+    right: 0; /* Отступ от правого края */
+}
+
+.weekday {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0; /* Правый край */
+}
+
+.weekend {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0; /* Размещаем правее блока с буднями */
+}
+
+.footer-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.social-media {
+    display: flex;
+    align-items: center; /* Выравнивание элементов по вертикали */
+    margin-right: auto; /* Отступ справа для выравнивания иконок слева */
+    filter: invert(1);
+    margin-top: 150px;
+}
+
+.social-media li {
+    list-style: none;
+    margin-right: 10px; /* Отступ между иконками */
+}
+
+.social-media li:last-child {
+    margin-right: 0; /* Убрать отступ справа у последней иконки */
+}
+
+.social-media img {
+    width: 24px; /* Размеры иконок */
+    height: 24px;
+    padding: 2px 6px; /* Внутренний отступ */
+    position: relative;
+}
+.social-media img::before {
+    content: ''; /* Добавление пустого контента */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Положение сверху */
+    left: 0; /* Положение слева */
+    width: 100%; /* Ширина равна ширине родительского элемента */
+    height: 100%; /* Высота равна высоте родительского элемента */
+    background-color: black; /* Цвет фона черный */
+    opacity: 0.5; /* Прозрачность 50% */
+    border-radius: 50%; /* Закругление углов для создания круга */
+}
+.social-media img:nth-child(1) {
+    filter: brightness(50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
