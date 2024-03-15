@@ -1,77 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brooklyn Public Library</title>
-  <link rel="stylesheet" href="HW_2.css">
-  <link rel="icon" type="image/png" href="favicon.png"> <!-- Подключение favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Library</title>
 </head>
 <body>
-
-<div class="wrapper">
-  <header>
+<div class="container">
+  <header class="header">
     <h1>Brooklyn Public Library</h1>
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Favorites</a></li>
-        <li><a href="#">Coffee shop</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">Library card</a></li>
-      </ul>
-    </nav>
-    <div class="user-icon">
-      <!-- Иконка пользователя -->
+    <div class="navigation">
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#favorites">Favorites</a></li>
+          <li><a href="#coffee-shop">Coffee shop</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#library-card">Library Card</a></li>
+        </ul>
+      </nav>
+      <button class="login-btn" type="button">
+        <img class="login-icon" src="./picter/icon_profile.png" alt="Login-icon">
+      </button>
+      <button class="header__burger-btn" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
-
   <main>
-    <section id="welcome" class="welcome">
-      <div class="welcome-content">
-        <h2>WELCOME TO THE BROOKLYN LIBRARY</h2>
+    <section class="welcome">
+      <div class="welcome-block">
+        <h5 class="welcome-text">Welcome<br>to the Brooklyn<br>Library</h5>
       </div>
     </section>
-    <section id="about">
+    <section class="about" id="about">
       <h2>About</h2>
-      <p>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside.</p>
-      <img src="./picter/image1.png" alt="Image 1">
-      <img src="./picter/image2.png" alt="Image 2">
-      <img src="./picter/image3.png" alt="Image 3">
-      <div class="button-container">
-        <button class="brown-btn"></button>
-        <button class="black-btn"></button>
-        <button class="black-btn"></button>
+      <p>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+      <div class="about-images-container">
+        <div class="about-images-wrapper">
+          <img class="about-images" src="./picter/image1.png" alt="girl-and-books">
+          <img class="about-images about-images-hidden" src="./picter/image2.png" alt="sculptures-and-books">
+          <img class="about-images about-images-hidden" src="./picter/image3.png" alt="library-books">
+          <img class="about-images about-images-hidden" src="./picter/image4.png" alt="ladder">
+          <img class="about-images about-images-hidden" src="./picter/image5.png" alt="building">
+        </div>
+      </div>
+      <div class="dots">
+        <div class="dot-box" id="first"><button class="dot dot--fill dot-1" data-index="0">&nbsp;</button></div>
+        <div class="dot-box" id="second"><button class="dot dot-2" data-index="1">&nbsp;</button></div>
+        <div class="dot-box" id="third"><button class="dot dot-3" data-index="2">&nbsp;</button></div>
+        <div class="dot-box dot-box-hidden" id="fourth"><button class="dot dot-4" data-index="3">&nbsp;</button></div>
+        <div class="dot-box dot-box-hidden" id="fifth"><button class="dot dot-5" data-index="4">&nbsp;</button></div>
       </div>
     </section>
-
   </main>
-
   <footer>
-    <div class="footer-inner">
-      <ul class="social-media">
-        <li><a href="#"><img src="./picter/free-icon-twitter-220375.png" alt="Twitter"></a></li>
-        <li><a href="#"><img src="./picter/free-icon-instagram-1077042.png" alt="Instagram"></a></li>
-        <li><a href="#"><img src="./picter/free-icon-facebook-1077041.png" alt="Facebook"></a></li>
-      </ul>
-      <div class="address-block">
-        <p>286 Cadman Plaza, New York,<br> NY 11238, United States</p>
+    <div class="footer-wrapper">
+      <div class="footer-wrapper-1">
+        <a class="address" href="https://www.google.com/search?client=safari&rls=en&q=286+Cadman+Plaza%2C+New+York%2C+NY+11238%2C+United+States&ie=UTF-8&oe=UTF-8#">286 Cadman Plaza, New York, NY 11238, United States</a>
+        <div class="social">
+          <ul class="social-icons">
+            <li><a href="http://www.twitter.com"><img src="./picter/twitter.svg" alt="twitter-icon"></a></li>
+            <li><a href="http://www.instagram.com"><img src="./picter/instagram.svg" alt="instagram-icon"></a></li>
+            <li><a href="http://www.facebook.com"><img src="./picter/facebook.svg" alt="facebook-icon"></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="spacer"></div> <!-- Пустой блок для заполнения пространства -->
-      <div class="schedule-block weekday">
-        <p>Mon - Fri<br>08:00 am - 07:00 pm</p>
-      </div>
-      <div class="schedule-block weekend">
-        <p>Sat - Sun<br>10:00 am - 06:00 pm</p>
+      <div class="footer-wrapper-2">
+        <div class="footer-worktime">
+          <span>Mon - Fri</span>
+          <span>08:00 am - 07:00 pm</span>
+        </div>
+        <div class="footer-worktime">
+          <span>Sat - Sun</span>
+          <span>10:00 am - 06:00 pm</span>
+        </div>
       </div>
     </div>
+    <hr class="footer-hr-tag">
+    <div class="footer-bottom">
+      <span>2024</span>
+      <a class="foot-link rs-link" target="_blank">TEAM 24</a>
+      <a class="foot-link" href="https://github.com/olgaPaskar" target="_blank">olgaPascar</a>
+    </div>
   </footer>
-
 </div>
-
+<script src="index.js"></script>
 </body>
 </html>
-
-
-
-

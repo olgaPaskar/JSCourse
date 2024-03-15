@@ -1,297 +1,565 @@
-/* CSS для больших экранов */
-@media only screen and (min-width: 1440px) {
-    .wrapper {
-        width: 1440px;
-        height: 1777px;
-        top: -512px;
-        left: -720px;
+
+/* BURGER-MENU ANIMATION */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
-/* CSS для маленьких экранов */
-@media only screen and (max-width: 768px) {
-    .wrapper {
-        width: 768px;
-        height: 1802px;
-        top: -551px;
-        left: 2470px;
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100px);
+        opacity: 0;
     }
 }
-header {
-    width: 1440px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Forum', cursive;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.welcome {
+    margin-bottom: 20px;
+}
+
+.favorites, .coffee-shop {
+    margin-bottom: 60px;
+}
+
+.contacts {
+    margin-bottom: 38px;
+}
+
+.library-card {
+    margin-bottom: 40px;
+}
+
+/* HEADER BLOCK */
+
+.header {
+    width: 100%;
     height: 90px;
-    background: #0C0C0E;
-    position: relative;
-    margin-bottom: -20px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: #0C0C0E;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    width: 294px;
-    height: 50px;
-    position: absolute;
-    top: 1px;
-    left: 20px;
-    font-family: Candara Light, serif;
     font-size: 30px;
+    padding: 20px;
+    margin-right: auto;
+    font-family: Forum;
+    color: #FFF;
+    font-style: normal;
     font-weight: 400;
     line-height: 50px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: white; /* Цвет текста белый */
-    white-space: nowrap;
-}
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    letter-spacing: 0.6px;
 }
 
-nav ul {
+.nav-list {
+    display: flex;
+    align-items: center;
     list-style-type: none;
+}
+
+.nav-list li:first-child {
     margin: 0;
-    padding: 0;
-    text-align: right; /* Выравнивание текста по правому краю */
 }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 20px; /* Расстояние между пунктами меню */
-    vertical-align: top; /* Выравнивание по верхнему краю */
-}
-
-nav ul li:first-child {
-    margin-left: 0; /* Убрать отступ слева для первого пункта меню */
-}
-
-nav ul li a {
-    font-family: Candara Light, serif;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF; /* Цвет текста */
+.nav-list li {
+    margin-left: 30px;
     text-decoration: none;
-    padding: 0 10px; /* Добавлено отступ справа и слева */
-    line-height: 50px; /* Выравнивание по центру вертикально */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
 }
 
-nav ul li a:hover {
-    color: #CCCCCC; /* Цвет текста при наведении */
-}
-#welcome {
-    width: 1440px;
-    height: 600px;
-    top: 90px;
-    background-image: url('./picter/85c1859f825ed82614b2036bc8be037f (1).jpg');
-    background-size: cover;
-    background-position: center;
-}
-.welcome-content {
-    width: 600px;
-    height: 170px;
-    top: 220px;
-    padding: 35px 40px;
-    background: #0C0C0E;
-    position: relative; /* Добавлено */
-}
-
-.welcome-content h2 {
-    color: white; /* Цвет текста */
-    font-size: 40px; /* Размер текста */
-    font-weight: normal; /* Обычный текст */
-    text-align: center; /* Выравнивание текста по центру */
-    line-height: 1.5; /* Межстрочный интервал */
-    word-spacing: 0; /* Расстояние между словами */
-    position: absolute; /* Добавлено */
-    top: 5px; /* Отрицательный отступ для поднятия текста */
-    left: 50%; /* Выравнивание текста по горизонтали */
-    transform: translateX(-50%); /* Смещение текста влево на половину ширины блока */
-}
-#about {
-    text-align: center; /* Выравнивание текста по центру */
-    margin-bottom: 50px;
-}
-
-#about h2 {
-    position: relative; /* Позиционирование элемента */
-    display: inline-block; /* Сделать элемент блочным и сохранить его размеры */
-}
-
-#about h2::after {
-    content: ''; /* Добавление пустого контента */
-    position: absolute; /* Позиционирование относительно родительского элемента */
-    bottom: -5px; /* Расстояние от нижнего края заголовка */
-    left: 50%; /* Расположение подчеркивания в середине */
-    transform: translateX(-50%); /* Центрирование подчеркивания */
-    width: 50px; /* Ширина подчеркивания */
-    height: 1px; /* Высота подчеркивания */
-    background-color: black; /* Цвет подчеркивания */
-}
-
-.button-container {
-    position: relative;
-    margin-top: 20px; /* Отступ от изображений */
-}
-
-button {
+.login-btn {
+    width: 28px;
+    height: 28px;
+    background-color: #000;
     border: none;
+    margin-left: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.header__burger-btn {
+    position: relative;
+    width: 45px;
+    height: 30px;
+    background-color: #000;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.header__burger-btn span {
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    transition: background-color .5s, opacity .45s, transform .5s;
+    will-change: transform; /* ускорение просчета анимации */
+}
+
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(2) {
+    transform: translateY(-1px);
+}
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+/* CROSSING SPANS */
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(-1px) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(-1px) rotate(-45deg);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #BB945F;
+}
+
+/* WELCOME SECTION */
+
+.welcome {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background: url("picter/img.png");
+}
+
+.welcome-text {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.welcome-block {
+    flex-shrink: 0;
+    background-color: #0C0C0E;
+    display: flex;
+    width: 600px;
+    height: 220px;
+    padding: 35px 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 220px 0 160px 0;
+    position: absolute;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    color: #0C0C0E;
+    position: relative;
+}
+
+.about-images {
+    width: calc(96% / 3);
+    max-width: 450px;
+}
+
+h2 {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+h2:after {
+    content: '';
+    display: block;
+    background: #0C0C0E;
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    top: 60px;
+    left: 48%;
+}
+
+.about p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.carrets {
+    display: none;
+}
+
+.about-images-container {
+    display: flex;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    transition: transform 1s ease;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.dot-box {
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
     border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
+    cursor: pointer;
 }
 
-.brown-btn {
-    background-color: #BB945F;
-    color: white;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
+.dot-box-hidden {
+    display: none;
 }
 
-.black-btn {
-    background-color: black;
-    color: white;
-    width: 16px;
-    height: 16px;
-}
+/* FOOTER BLOCK */
+
 footer {
-    background-color: #000000; /* черный цвет фона */
-    width: 1440px;
-    height: 250px;
-    position: relative; /* позиционирование */
-    top: 0; /* прижимаем к верху блока welcome */
-    margin-top: 20px; /* устанавливаем отступ от блока welcome */
+    background-color: #0C0C0E;
 }
 
-.footer-inner {
-    width: 1400px;
-    height: 90px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.footer-wrapper {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    justify-content: space-between;/* Цвет текста */
-}
-.footer-container {
-    width: 1400px;
-    height: 90px;
-    top: 20px;
-    left: 20px;
-    gap: 10px;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
 }
 
-.address-block {
+.footer-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-wrapper-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer-wrapper-1 a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
     width: 229px;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-    left: -100px;
-}
-.address-block p {
-    word-wrap: break-word; /* Разрешает переносить слова при необходимости */
-}
-.spacer {
-    flex-grow: 1; /* Пустой блок занимает всё доступное пространство */
-}
-
-.schedule-block {
-    width: 149px;
     height: 40px;
-    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-wrapper-1 a:hover, .footer-wrapper-1 a:active {
+    cursor: pointer;
+    color: #BB945F;
+}
+
+.footer-worktime {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    max-width: 230px;
+    margin-bottom: 10px;
+}
+
+.footer-worktime span {
     font-size: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons li {
+    width: 24px;
+    height: 24px;
+    list-style-type: none;
+}
+
+footer hr {
+    width: 97%;
+    margin-left: 20px;
+    color: #fff;
+}
+
+footer span {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
-    text-align: right;
-    color: white; /* Цвет текста */
-    position: absolute; /* Абсолютное позиционирование */
-    top: 0; /* Отступ от верхнего края */
-    right: 0; /* Отступ от правого края */
 }
 
-.weekday {
-    text-align: right;
-    position: absolute;
-    top: 0;
-    right: 0; /* Правый край */
+footer .foot-link {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
 }
 
-.weekend {
-    text-align: right;
-    position: absolute;
-    top: 0;
-    left: 0; /* Размещаем правее блока с буднями */
-}
-
-.footer-inner {
-    position: relative;
+.footer-bottom {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 44px 20px 44px 20px;
 }
 
+/* MEDIA */
 
-.social-media {
-    display: flex;
-    align-items: center; /* Выравнивание элементов по вертикали */
-    margin-right: auto; /* Отступ справа для выравнивания иконок слева */
-    filter: invert(1);
-    margin-top: 150px;
+@media only screen and (max-width: 1430px) {
+
+    /* HEADER MEDIA 1105*/
+
+    header {
+        position: relative;
+    }
+    .nav-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 332px;
+        height: 570px;
+        background-color: #000;
+        z-index: 1;
+        visibility: hidden;
+    }
+
+    .header.open .nav-menu {
+        visibility: visible;
+        animation: slideDown 1s;
+    }
+
+    .header.close .nav-menu {
+        visibility: hidden;
+        animation: slideUp 1s;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 118px;
+        height: 370px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 50px;
+    }
+
+    .login-btn {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    .header__burger-btn {
+        display: inline-block;
+    }
+
+    /* ABOUT MEDIA 1105 */
+
+    h2:after {
+        left: calc((100% - 50px) / 2);
+    }
+
+    .about {
+        margin-bottom: 30px;
+    }
+
+    .about p {
+        padding: 0 30px;
+    }
+
+    .about-images-wrapper img:first-child {
+        display: block;
+    }
+
+    .about-images {
+        width: 100%;
+        max-width: none;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .about-images-container {
+        justify-content: center;
+        position: relative;
+        gap: 56px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .carrets {
+        width: 24px;
+        height: 24px;
+        border: none;
+        background-color: #FFF;
+        display: flex;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .dot-box-hidden {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+       /* HEADER MEDIA 768 */
+
+    .login-icon {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    /* ABOUT MEDIA 768 */
+
+    .about-images-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 768px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .about-images-wrapper {
+        display: flex;
+    }
+
+    .about-images {
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* FOOTER MEDIA 768 */
+
+    .footer-hr-tag {
+        width: 100%;
+        max-width: 728px;
+    }
 }
-
-.social-media li {
-    list-style: none;
-    margin-right: 10px; /* Отступ между иконками */
-}
-
-.social-media li:last-child {
-    margin-right: 0; /* Убрать отступ справа у последней иконки */
-}
-
-.social-media img {
-    width: 24px; /* Размеры иконок */
-    height: 24px;
-    padding: 2px 6px; /* Внутренний отступ */
-    position: relative;
-}
-.social-media img::before {
-    content: ''; /* Добавление пустого контента */
-    position: absolute; /* Абсолютное позиционирование */
-    top: 0; /* Положение сверху */
-    left: 0; /* Положение слева */
-    width: 100%; /* Ширина равна ширине родительского элемента */
-    height: 100%; /* Высота равна высоте родительского элемента */
-    background-color: black; /* Цвет фона черный */
-    opacity: 0.5; /* Прозрачность 50% */
-    border-radius: 50%; /* Закругление углов для создания круга */
-}
-.social-media img:nth-child(1) {
-    filter: brightness(50%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
