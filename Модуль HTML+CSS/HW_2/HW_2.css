@@ -192,7 +192,7 @@ a:hover {
     height: 600px;
     width: 100%;
     background-size: cover;
-    background: url("picter/img.png");
+    background: url("picter/welcome.png");
 }
 
 .welcome-text {
@@ -279,6 +279,7 @@ h2:after {
     overflow: hidden;
 }
 
+
 .about-images-wrapper {
     display: flex;
     justify-content: space-between;
@@ -311,7 +312,189 @@ h2:after {
 .dot-box-hidden {
     display: none;
 }
+/* FAVORITES SECTION */
 
+.pick {
+    color: #000;
+    text-align: left;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.favorites {
+    margin-top: 20px;
+}
+
+.favorites label {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.radio-box {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 75px;
+    margin-left: 20px;
+    accent-color: black;
+}
+
+.favorites input {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.radio-conteiner {
+    border: none;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.book-box-conteiner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 200px;
+    row-gap: 40px;
+    border: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.book-box {
+    width: 550px;
+    height: 555px;
+    border: 1px solid #000;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.staff {
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.book-name {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.author {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-book {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 355px;
+}
+
+.buy {
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+
+    background-color: #fff;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+
+    position: absolute;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.buy:hover, .buy:active {
+    border-radius: 2px;
+    border: 1px solid #BB945F;
+    background: #BB945F;
+}
+
+.own {
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #BB945F;
+    color: #BB945F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 15px;
+}
+
+.book-box-wrapper {
+    width: 590px;
+    position: relative;
+}
+
+.book-place {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.book-spring, .book-summer, .book-autumn {
+    display: none;
+    width: 200px;
+    height: 300px;
+    top: 2417px;
+    left: 1220px;
+}
 /* FOOTER BLOCK */
 
 footer {
