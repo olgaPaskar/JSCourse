@@ -28,11 +28,11 @@ const multiplyTable = (num) => {
     return result;
 }
 
-//console.log(multiplyTable(11))
-//console.log(multiplyTable(2))
-//console.log(multiplyTable(7))
-//console.log(multiplyTable(10))
-//console.log(multiplyTable(20))
+console.log(multiplyTable(11))
+console.log(multiplyTable(2))
+console.log(multiplyTable(7))
+console.log(multiplyTable(10))
+console.log(multiplyTable(20))
 
 
 // 2
@@ -157,7 +157,6 @@ console.log(processText(' dreaaaaame '))
 
 
 
-
 const encodeString =  (targetStr , key) => {
     let encodedStr = '';
     for (let i = 0; i < targetStr .length; i++) {
@@ -184,12 +183,6 @@ const encoded = encodeString("Hello, world!", codeKey);
 const decoded = decodeString(encoded, codeKey)
 
 console.log(encoded,decoded);
-
-
-
-
-
-
 
 
 

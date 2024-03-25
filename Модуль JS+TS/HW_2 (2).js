@@ -26,7 +26,7 @@ const gradePerformanceRating = performanceRating === 4 || performanceRating === 
 
 if (yearsOfService < 5 && gradePerformanceRating) {
     console.log("Бонус 5%")
-} else if (yearsOfService >= 5 && gradePerformanceRating) {
+}else if (yearsOfService >= 5 && gradePerformanceRating) {
     console.log("Бонус 10%")
 } else {
     console.log("Бонус не начислен!")

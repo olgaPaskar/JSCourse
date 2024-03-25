@@ -42,6 +42,3 @@ const formatPhoneNumber = num => {
     return num.replace(/(...)(...)(.*)/, '($1) $2-$3')
 }
 console.log(formatPhoneNumber('1234567890'))
-
-
-
