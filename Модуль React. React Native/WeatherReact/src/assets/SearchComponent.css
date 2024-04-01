@@ -1,0 +1,25 @@
+.SearchComponent {
+    display: flex;
+    align-items: center;
+    border: 2px solid #7bcdef;
+    background-color: #7bcdef;
+}
+
+.SearchComponent input {
+    padding: 8px 16px;
+    border-radius: 5px 0 0 5px; /* Закругляем левый край поля ввода */
+    flex: 1; /* Займет всю доступную ширину */
+    background-color: #7bcdef;
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.SearchComponent button {
+    padding: 8px 16px;
+    border-radius: 0 5px 5px 0; /* Закругляем правый край кнопки */
+    flex: 1; /* Займет всю доступную ширину */
+    background-color: #7bcdef;
+    color: #fff;
+    cursor: pointer;
+}
+

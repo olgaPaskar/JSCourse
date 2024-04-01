@@ -1,16 +1,16 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #4CAF50;
+.login-screen {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100vw;
   height: 100vh;
-  background-image: url('../assets/1675328114_top-fon-com-p-fon-dlya-prezentatsii-nebo-oblaka-77.png');
+  background-image: url('1675328114_top-fon-com-p-fon-dlya-prezentatsii-nebo-oblaka-77.png');
   background-size: cover;
   background-position: center;
 }
 
+/* Стили для контейнера входа в систему */
 .login-container {
   display: flex;
   flex-direction: column;
@@ -22,6 +22,7 @@ body {
   border-radius: 10px;
 }
 
+/* Стили для контейнера аватара */
 .avatar-container {
   width: 150px;
   height: 150px;
@@ -41,6 +42,7 @@ body {
   object-fit: cover;
 }
 
+/* Стили для кнопки выбора аватара */
 .choose-avatar-btn {
   position: absolute;
   bottom: 5px;
@@ -50,6 +52,7 @@ body {
   cursor: pointer;
 }
 
+/* Стили для группы формы */
 .form-group {
   margin-bottom: 20px;
 }
@@ -59,6 +62,7 @@ body {
   margin-bottom: 5px;
 }
 
+/* Стили для текстовых полей ввода */
 .form-group input[type="text"],
 .form-group input[type="password"] {
   width: 300px;
@@ -67,6 +71,8 @@ body {
   border-radius: 5px;
 }
 
+
+/* Стили для кнопки отправки формы */
 button[type="submit"] {
   padding: 10px 20px;
   background-color: #393e46;
@@ -80,5 +86,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #00adb5;
 }
+
 
 

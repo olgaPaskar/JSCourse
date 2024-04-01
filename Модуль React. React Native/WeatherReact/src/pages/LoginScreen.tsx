@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import './LoginScreen.css';
+import React, {useState} from 'react';
+import '../assets/LoginScreen.css';
 
 import AvatarComponent from '../components/AvatarComponent';
 import LoginComponent from '../components/LoginComponent';
 import PasswordComponent from '../components/PasswordComponent';
 import RepeatPasswordComponent from '../components/RepeatPasswordComponent';
+import RegisterButton from "../components/RegisterButton";
 
-function LoginScreen() {
+function LoginScreen({navigateToMain}) {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const [repeatPassword, setRepeatPassword] = useState('');
@@ -16,12 +17,12 @@ function LoginScreen() {
 
     const handleLoginChange = (event) => {
         setLogin(event.target.value);
-        setLoginError(''); // Очищаем ошибку при изменении значения поля логина
+        setLoginError('');
     };
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
-        setPasswordError(''); // Очищаем ошибку при изменении значения поля пароля
+        setPasswordError('');
     };
 
     const handleRepeatPasswordChange = (event) => {
@@ -38,7 +39,6 @@ function LoginScreen() {
                 };
                 reader.readAsDataURL(file);
             } else {
-                // Устанавливаем сообщение об ошибке для аватара
                 setLoginError('Пожалуйста, загрузите изображение.');
             }
         }
@@ -66,8 +66,7 @@ function LoginScreen() {
             setLoginError('Пожалуйста, загрузите аватар.');
             return;
         }
-
-        // Отправка данных на сервер или другая логика аутентификации
+        navigateToMain();
     };
 
     const isLoginValid = (login) => {
@@ -80,7 +79,7 @@ function LoginScreen() {
     };
 
     return (
-        <div className="login-container">
+        <div className="login-screen">
             <h1>Welcome to WeatherCity!</h1>
             <form onSubmit={handleSubmit}>
                 <AvatarComponent avatar={avatar} handleAvatarChange={handleAvatarChange} />
@@ -88,14 +87,21 @@ function LoginScreen() {
                 {loginError && <div className="error">{loginError}</div>}
                 <PasswordComponent password={password} handlePasswordChange={handlePasswordChange} />
                 {passwordError && <div className="error">{passwordError}</div>}
-                <RepeatPasswordComponent repeatPassword={repeatPassword} handleRepeatPasswordChange={handleRepeatPasswordChange} />
-                <button type="submit">Login</button>
+                <RepeatPasswordComponent repeatPassword={repeatPassword}
+                                         handleRepeatPasswordChange={handleRepeatPasswordChange}/>
+                <RegisterButton onClick={handleSubmit} isDisabled={!login || !password || !repeatPassword || !avatar}/>
             </form>
         </div>
     );
 }
 
 export default LoginScreen;
+
+
+
+
+
+
 
 
 

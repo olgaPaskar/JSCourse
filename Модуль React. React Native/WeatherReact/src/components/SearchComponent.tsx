@@ -1,44 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import '../assets/SearchComponent.css';
 
-function Search({ cities, onCitySelect }) {
-    const [searchTerm, setSearchTerm] = useState('');
-    const [filteredCities, setFilteredCities] = useState([]);
+const SearchComponent = ({ onSubmit }) => {
+    const [city, setCity] = useState('');
 
-    useEffect(() => {
-        const filtered = cities.filter(city =>
-            city.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setFilteredCities(filtered);
-    }, [searchTerm, cities]);
-
-    const handleInputChange = (event) => {
-        setSearchTerm(event.target.value);
-    };
-
-    const handleCitySelect = (city) => {
-        setSearchTerm('');
-        onCitySelect(city);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onSubmit(city);
     };
 
     return (
-        <div className="search">
+        <form className="SearchComponent" onSubmit={handleSubmit}>
             <input
                 type="text"
-                value={searchTerm}
-                onChange={handleInputChange}
-                placeholder="Введите название города"
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+                placeholder="Enter city name"
             />
-            {searchTerm && (
-                <ul className="city-list">
-                    {filteredCities.map((city, index) => (
-                        <li key={index} onClick={() => handleCitySelect(city)}>
-                            {city}
-                        </li>
-                    ))}
-                </ul>
-            )}
-        </div>
+            <button type="submit">Search</button>
+        </form>
     );
-}
+};
 
-export default Search;
+export default SearchComponent;
+
+
+
+
+
+
+
+
+
+
