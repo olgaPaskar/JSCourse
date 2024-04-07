@@ -5,12 +5,31 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: url('1675328114_top-fon-com-p-fon-dlya-prezentatsii-nebo-oblaka-77.png');
+  background-image: url('../../assets/1674643784_top-fon-com-p-fon-prezentatsii-pogoda-7.jpg');
   background-size: cover;
   background-position: center;
+  background-color: rgba(234, 106, 253, 0.8);
+  position: relative;
 }
 
-/* Стили для контейнера входа в систему */
+.buttons-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.buttons-container button {
+  margin-left: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px;
+  background-image: linear-gradient(to right, #9305f1, #05f1f1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .login-container {
   display: flex;
   flex-direction: column;
@@ -21,8 +40,6 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-
-/* Стили для контейнера аватара */
 .avatar-container {
   width: 150px;
   height: 150px;
@@ -41,8 +58,6 @@
   height: 100%;
   object-fit: cover;
 }
-
-/* Стили для кнопки выбора аватара */
 .choose-avatar-btn {
   position: absolute;
   bottom: 5px;
@@ -51,8 +66,6 @@
   border-radius: 5px;
   cursor: pointer;
 }
-
-/* Стили для группы формы */
 .form-group {
   margin-bottom: 20px;
 }
@@ -61,8 +74,6 @@
   display: block;
   margin-bottom: 5px;
 }
-
-/* Стили для текстовых полей ввода */
 .form-group input[type="text"],
 .form-group input[type="password"] {
   width: 300px;
@@ -70,9 +81,6 @@
   border: 1px solid #cccccc;
   border-radius: 5px;
 }
-
-
-/* Стили для кнопки отправки формы */
 button[type="submit"] {
   padding: 10px 20px;
   background-color: #393e46;
@@ -87,5 +95,15 @@ button[type="submit"]:hover {
   background-color: #00adb5;
 }
 
+a {
+  padding: 10px 20px;
+  background-color: #f2f4f8;
+  color: #eeeeee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: -47px;
+}
 
 

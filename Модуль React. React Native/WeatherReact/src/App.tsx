@@ -1,24 +1,34 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import LoginScreen from './pages/LoginScreen';
-import MainScreen from './pages/MainScreen';
+import { Provider } from 'react-redux';
+import store from './store';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LoginScreen from './pages/loginScreen/LoginScreen';
+import MainScreen from './pages/mainScreen/MainScreen';
 
 const App = () => {
-    const navigateToMain = () => {
-        window.location.href = '/main';
-    };
-
     return (
+        <Provider store={store}>
         <Router>
             <Routes>
-                <Route exact path="/" element={<LoginScreen navigateToMain={navigateToMain}/>}/>
-                <Route path="/main" element={<MainScreen/>}/>
+                <Route
+                    exact
+                    path="/"
+                    element={<LoginScreen />}
+                />
+                <Route
+                    path="/main"
+                    element={<MainScreen />}
+                />
             </Routes>
         </Router>
+        </Provider>
     );
 };
 
 export default App;
+
+
+
 
 
 

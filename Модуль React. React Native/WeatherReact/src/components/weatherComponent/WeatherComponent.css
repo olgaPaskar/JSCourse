@@ -1,0 +1,12 @@
+.weather-info-container {
+    position: absolute;
+    left: 370px;
+    top: 20%;
+    transform: translateY(-50%);
+    width: 27%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(137, 68, 239, 0.15);
+    border-radius: 5px;
+    font-size: 1.5em;
+}

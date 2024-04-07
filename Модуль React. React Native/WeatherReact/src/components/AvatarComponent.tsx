@@ -7,7 +7,6 @@ function AvatarComponent({ avatar, handleAvatarChange }) {
             <label htmlFor="avatar" className="avatar-label">
                 {avatar && <img src={avatar} alt="Avatar" className="avatar-preview" />}
                 {!avatar && <img src={defaultAvatar} alt="Default avatar" className="default-avatar" />}
-                <span className="choose-avatar-btn">Выбрать аватар</span>
             </label>
             <input
                 type="file"

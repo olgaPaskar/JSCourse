@@ -1,7 +1,6 @@
-// WeatherInfo.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../assets/WeatherComponent.css'
+import './WeatherComponent.css'
 
 const WeatherComponent = ({ weatherData }) => {
     const [currentWeather, setCurrentWeather] = useState(null);
@@ -9,11 +8,9 @@ const WeatherComponent = ({ weatherData }) => {
     useEffect(() => {
         const fetchCurrentWeather = async () => {
             try {
-                // Получаем текущее местоположение пользователя
                 navigator.geolocation.getCurrentPosition(async (position) => {
                     const { latitude, longitude } = position.coords;
 
-                    // Запрашиваем погоду по текущему местоположению
                     const response = await axios.get(
                         `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=8d2b23833b2282cc7e34989c52989413&units=metric`
                     );
@@ -25,7 +22,7 @@ const WeatherComponent = ({ weatherData }) => {
         };
 
         fetchCurrentWeather();
-    }, []); // Пустой массив завершает эффект после первого рендера
+    }, []);
 
     return (
         <div className="weather-info-container">

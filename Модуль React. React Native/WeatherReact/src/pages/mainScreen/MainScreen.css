@@ -5,9 +5,13 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('1674643784_top-fon-com-p-fon-prezentatsii-pogoda-7.jpg');
     background-size: cover;
-    background-position: center;
+    background: rgba(5, 199, 161, 0); /* Задаем начальный цвет фона */
+    background: radial-gradient(
+            circle,
+            rgb(0, 76, 117) 0%, /* Цвет фона в центре градиента */
+            rgb(151, 234, 215) 35%, /* Цвет фона в середине градиента */ rgb(241, 157, 232) 100%
+    );/* Цвет фона на краях градиента */
 }
 
 .search-component-container {
@@ -26,7 +30,7 @@
     top: 20px;
     left: 20px;
     cursor: pointer;
-    z-index: 999; /* Позволяет бургеру быть выше других элементов */
+    z-index: 999;
 }
 
 .bar {
@@ -37,7 +41,6 @@
     transition: 0.4s;
 }
 
-/* При нажатии, анимация для крестика */
 .burger-menu-button.active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
