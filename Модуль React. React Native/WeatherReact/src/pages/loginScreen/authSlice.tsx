@@ -1,4 +1,4 @@
-import { createSlice, configureStore } from '@reduxjs/toolkit';
+import { createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
     login: '',
@@ -32,10 +32,5 @@ const authSlice = createSlice({
 
 export const { setLogin, setPassword, setAvatar, setError, setShowRegisterModal } = authSlice.actions;
 
-// eslint-disable-next-line react-refresh/only-export-components
-export default configureStore({
-    reducer: {
-        auth: authSlice.reducer
-    }
-});
+export const {reducer: authReducer} = authSlice;
 

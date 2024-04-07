@@ -1,8 +1,10 @@
 .SearchComponent {
     display: flex;
-    align-items: center;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
     border: 2px solid #7bcdef;
     background-color: #7bcdef;
+    padding: 10px; /* Отступы вокруг всего содержимого */
 }
 
 .SearchComponent input {
@@ -22,4 +24,3 @@
     color: #fff;
     cursor: pointer;
 }
-

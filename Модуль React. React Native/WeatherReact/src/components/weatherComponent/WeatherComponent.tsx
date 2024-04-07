@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './WeatherComponent.css'
+import './WeatherComponent.css';
 
 const WeatherComponent = ({ weatherData }) => {
     const [currentWeather, setCurrentWeather] = useState(null);
@@ -30,18 +30,16 @@ const WeatherComponent = ({ weatherData }) => {
             {currentWeather ? (
                 <>
                     <p>Location: {currentWeather.name}</p>
-                    <p>Temperature: {currentWeather.main.temp} °C</p>
-                    <p>Description: {currentWeather.weather[0].description}</p>
+                    <p>Temperature: {currentWeather.main && currentWeather.main.temp} °C</p>
+                    <p>Description: {currentWeather.weather && currentWeather.weather[0].description}</p>
                 </>
             ) : (
-                <p>Loading...</p>
+                <p>Loading current weather...</p>
             )}
             <hr />
             {weatherData && (
                 <>
-                    <h2>Weather in {weatherData.name}</h2>
-                    <p>Temperature: {weatherData.main.temp} °C</p>
-                    <p>Description: {weatherData.weather[0].description}</p>
+                    <div id="weather-info"/>
                 </>
             )}
         </div>
@@ -49,3 +47,4 @@ const WeatherComponent = ({ weatherData }) => {
 };
 
 export default WeatherComponent;
+

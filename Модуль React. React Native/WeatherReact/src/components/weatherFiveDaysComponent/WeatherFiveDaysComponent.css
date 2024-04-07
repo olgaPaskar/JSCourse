@@ -1,9 +1,14 @@
 .forecast-day {
     display: inline-block;
     width: 200px;
-    margin: 10px;
+    margin: 450px 10px 10px 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #307bee;
+}
+
+.forecast-day h2 {
+    font-size: 18px;
+    margin-top: 100px;
 }
 
 .forecast-day h3 {
@@ -12,12 +17,13 @@
 }
 
 .forecast-day div {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #c91212;
     padding-top: 10px;
 }
 
 .forecast-day p {
     margin: 5px 0;
 }
+
 
 

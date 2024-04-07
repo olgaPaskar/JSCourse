@@ -6,12 +6,12 @@
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    background: rgba(5, 199, 161, 0); /* Задаем начальный цвет фона */
+    background: rgba(5, 199, 161, 0);
     background: radial-gradient(
             circle,
-            rgb(0, 76, 117) 0%, /* Цвет фона в центре градиента */
-            rgb(151, 234, 215) 35%, /* Цвет фона в середине градиента */ rgb(241, 157, 232) 100%
-    );/* Цвет фона на краях градиента */
+            rgb(0, 76, 117) 0%,
+            rgb(151, 234, 215) 35%,  rgb(241, 157, 232) 100%
+    );
 }
 
 .search-component-container {
@@ -52,3 +52,8 @@
 .burger-menu-button.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.weather-search-container {
+    display: flex;
+}
+

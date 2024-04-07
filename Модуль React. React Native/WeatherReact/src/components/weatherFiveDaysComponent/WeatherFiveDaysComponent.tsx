@@ -8,7 +8,6 @@ const FiveDayForecastComponent = () => {
     useEffect(() => {
         const fetchForecastData = async () => {
             try {
-                // Получение текущего местоположения пользователя
                 navigator.geolocation.getCurrentPosition(async (position) => {
                     const { latitude, longitude } = position.coords;
 
@@ -25,13 +24,10 @@ const FiveDayForecastComponent = () => {
         fetchForecastData();
     }, []);
 
-    // Функция для группировки прогнозов по дням
     const groupForecastsByDay = (forecasts) => {
         const groupedForecasts = {};
         forecasts.forEach((forecast) => {
-            // Извлекаем дату из времени прогноза
             const date = forecast.dt_txt.split(' ')[0];
-            // Добавляем прогноз в соответствующий день
             if (!groupedForecasts[date]) {
                 groupedForecasts[date] = [forecast];
             } else {
@@ -42,20 +38,17 @@ const FiveDayForecastComponent = () => {
     };
 
     return (
-        <div>
+        <div className="forecast-container">
             <h2>5-Day Weather Forecast</h2>
             {forecastData ? (
                 <div>
                     {Object.entries(groupForecastsByDay(forecastData.list)).map(([date, forecasts]) => (
                         <div key={date} className="forecast-day">
                             <h3>{date}</h3>
-                            {forecasts.map((forecast, index) => (
-                                <div key={index}>
-                                    <p>Date and Time: {forecast.dt_txt}</p>
-                                    <p>Temperature: {forecast.main.temp} °C</p>
-                                    <p>Description: {forecast.weather[0].description}</p>
-                                </div>
-                            ))}
+                            <div>
+                                <p>Average Temperature: {calculateAverageTemperature(forecasts)} °C</p>
+                                <p>Description: {forecasts[0].weather[0].description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -66,7 +59,17 @@ const FiveDayForecastComponent = () => {
     );
 };
 
+const calculateAverageTemperature = (forecasts) => {
+    const temperatures = forecasts.map((forecast) => forecast.main.temp);
+    const sum = temperatures.reduce((acc, curr) => acc + curr, 0);
+    return (sum / temperatures.length).toFixed(1);
+};
+
 export default FiveDayForecastComponent;
+
+
+
+
 
 
 
