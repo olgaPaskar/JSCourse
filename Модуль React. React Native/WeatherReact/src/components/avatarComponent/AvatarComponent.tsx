@@ -1,5 +1,5 @@
 import React from 'react';
-import defaultAvatar from '../assets/Honorary_Members_placeholder_0.jpg';
+import defaultAvatar from '../../assets/Honorary_Members_placeholder_0.jpg';
 
 function AvatarComponent({ avatar, handleAvatarChange }) {
     return (

@@ -7,7 +7,7 @@ export const ThemeContext = React.createContext<ThemeContext>(
     {} as ThemeContext
 );
 
- const ThemeProvider: React.FC = ({ children }) => {
+ const ThemeProviderComponent: React.FC = ({ children }) => {
     const [theme, setTheme] = useState<Theme>("light");
     const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
@@ -25,4 +25,4 @@ export const ThemeContext = React.createContext<ThemeContext>(
         </ThemeContext.Provider>
     );
 };
- export default ThemeProvider;
+ export default ThemeProviderComponent;

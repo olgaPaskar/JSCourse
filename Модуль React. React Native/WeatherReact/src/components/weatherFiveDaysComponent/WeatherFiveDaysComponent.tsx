@@ -39,7 +39,6 @@ const FiveDayForecastComponent = () => {
 
     return (
         <div className="forecast-container">
-            <h2>5-Day Weather Forecast</h2>
             {forecastData ? (
                 <div>
                     {Object.entries(groupForecastsByDay(forecastData.list)).map(([date, forecasts]) => (

@@ -1,13 +1,13 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import SearchComponent from '../../components/searchComponent/SearchComponent';
 import WeatherComponent from '../../components/weatherComponent/WeatherComponent';
 import DrawerComponent from '../../components/drawerComponent/DrawerComponent';
 import WeatherFiveDaysComponent from "../../components/weatherFiveDaysComponent/WeatherFiveDaysComponent";
 import './MainScreen.css';
-import { ThemeContext } from '../../ThemeProvider';
 
-const MainScreen: React.FC = ({ avatar, login }) => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
+
+const MainScreen: React.FC = () => {
+
     const [weatherData, setWeatherData] = useState(null);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -32,7 +32,7 @@ const MainScreen: React.FC = ({ avatar, login }) => {
     };
 
     return (
-        <div className={`main-screen ${theme}`}>
+        <div className={`main-screen`}>
             <div className="search-component-container">
                 <SearchComponent onSubmit={fetchWeatherData} />
             </div>
@@ -44,16 +44,18 @@ const MainScreen: React.FC = ({ avatar, login }) => {
                 <button className="burger-menu-button" onClick={toggleDrawer}>
                     ☰
                 </button>
-                <button className="theme-switch-button" onClick={toggleTheme}>
-                    Switch to {theme === 'light' ? 'dark' : 'light'} mode
-                </button>
-                <DrawerComponent isOpen={isDrawerOpen} onClose={toggleDrawer} avatar={avatar} login={login} />
+                <DrawerComponent isOpen={isDrawerOpen} onClose={toggleDrawer} />
             </div>
         </div>
     );
 };
 
 export default MainScreen;
+
+
+
+
+
 
 
 

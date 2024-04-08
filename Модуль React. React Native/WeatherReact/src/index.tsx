@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import ThemeProvider  from './ThemeProvider';
+import ThemeProviderComponent  from './components/themeProviderComponent/ThemeProviderComponent';
+import './config/i18n';
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <ThemeProvider>
+        <ThemeProviderComponent>
                 <App />
-        </ThemeProvider>
+        </ThemeProviderComponent>
     </React.StrictMode>,
     document.getElementById('root')
 );

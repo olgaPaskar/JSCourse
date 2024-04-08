@@ -4,7 +4,7 @@
     left: -300px;
     width: 300px;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: rgba(189, 136, 246, 0.4);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: left 0.3s ease;
 }
@@ -54,10 +54,6 @@ label {
     display: flex;
     align-items: center;
     cursor: pointer;
-}
-
-input[type="checkbox"] {
-    margin-right: 5px;
 }
 
 

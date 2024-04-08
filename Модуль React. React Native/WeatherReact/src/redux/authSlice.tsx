@@ -24,13 +24,13 @@ const authSlice = createSlice({
         setError(state, action) {
             state.error = action.payload;
         },
-        setShowRegisterModal(state, action) {
-            state.showRegisterModal = action.payload;
+        setRepeatPassword(state, action) {
+            state.repeatPassword = action.payload;
         }
     }
 });
 
-export const { setLogin, setPassword, setAvatar, setError, setShowRegisterModal } = authSlice.actions;
+export const { setLogin, setPassword, setAvatar, setError, setRepeatPassword } = authSlice.actions;
 
 export const {reducer: authReducer} = authSlice;
 

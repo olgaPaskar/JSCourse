@@ -5,13 +5,10 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    background-image: url('../../assets/1674643784_top-fon-com-p-fon-prezentatsii-pogoda-7.jpg');
     background-size: cover;
-    background: rgba(5, 199, 161, 0);
-    background: radial-gradient(
-            circle,
-            rgb(0, 76, 117) 0%,
-            rgb(151, 234, 215) 35%,  rgb(241, 157, 232) 100%
-    );
+    background-position: center;
+
 }
 
 .search-component-container {
@@ -36,7 +33,7 @@
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #000;
+    background-color: #7bcdef;
     margin: 4px 0;
     transition: 0.4s;
 }
@@ -56,4 +53,3 @@
 .weather-search-container {
     display: flex;
 }
-
