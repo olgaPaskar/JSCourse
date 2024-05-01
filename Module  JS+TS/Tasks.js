@@ -126,9 +126,9 @@ console.log(firstIndex); // 2
 // Создайте функцию, которая находит индекс последнего отрицательного числа в массиве, используя метод indexOf.
 
 const array5 = [1, 2, -3, 4, -5, -3];
-const lastIndex = array5.lastIndexOf(-3);// ищет заданное значение c права на лево и возвращает его индекс
+const negativeNumberIndex = array5.lastIndexOf(array5.find(num => num < 0));
+console.log(negativeNumberIndex);
 
-console.log(lastIndex); // 5
 
 // Реализуйте программу, которая находит индекс определенной строки в массиве, используя метод indexOf.
 
