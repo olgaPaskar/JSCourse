@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e96f9cca-5ed4-4a6b-ab7c-5b2b4cce4e17" name="Changes" comment="last commit">
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_1/1671465832437.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_1/CW_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_1/HW_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/HW_2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/HW_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/HW_2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/Carret_Left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/Carret_Right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-autumn-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-autumn-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-autumn-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-autumn-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-spring-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-spring-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-spring-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-spring-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-summer-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-summer-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-summer-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-summer-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-winter-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-winter-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-winter-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/book-winter-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/android-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/android-icon-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/android-icon-36x36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/android-icon-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/android-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/android-icon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-114x114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-57x57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-76x76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon-precomposed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/favicon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/ms-icon-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/ms-icon-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/ms-icon-310x310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/favicon/ms-icon-70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/icon_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/image1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/image2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/image3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/image4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/image5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/welcome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль HTML+CSS/HW_2/picter/Без имени.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW_4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW_6.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW_7.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HM1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_ 4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_2 (2).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_4(2).js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_6.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW_7.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MW.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tasks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/primer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/assets/1674643784_top-fon-com-p-fon-prezentatsii-pogoda-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/assets/1675328114_top-fon-com-p-fon-dlya-prezentatsii-nebo-oblaka-77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/assets/Honorary_Members_placeholder_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/avatarComponent/AvatarComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/drawerComponent/DrawerComponent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/drawerComponent/DrawerComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/loginComponent/LoginComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/passwordComponent/PasswordComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/registerButtonComponent/RegisterButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/repeatPasswordComponent/RepeatPasswordComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/searchComponent/SearchComponent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/searchComponent/SearchComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/themeProviderComponent/ThemeProviderComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/weatherComponent/WeatherComponent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/weatherComponent/WeatherComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/weatherFiveDaysComponent/WeatherFiveDaysComponent.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/components/weatherFiveDaysComponent/WeatherFiveDaysComponent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/config/i18n.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/config/i18next-http-backend.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/locales/translation_en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/locales/translation_ru.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/pages/loginScreen/LoginScreen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/pages/loginScreen/LoginScreen.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/pages/mainScreen/MainScreen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/pages/mainScreen/MainScreen.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/redux/authSlice.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/store/store.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/src/vite-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Модуль React. React Native/WeatherReact/vite.config.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2fp9jLDNrLxcj5XwcJvL1i4S2H2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tasks.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Tasks.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.Tasks.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e96f9cca-5ed4-4a6b-ab7c-5b2b4cce4e17" name="Changes" comment="" />
+      <created>1714487285896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714487285896</updated>
+      <workItem from="1714487287333" duration="3136000" />
+      <workItem from="1714490469936" duration="14092000" />
+    </task>
+    <task id="LOCAL-00001" summary="last commit">
+      <created>1714504431044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714504431044</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MW.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit" />
+  </component>
+</project>
