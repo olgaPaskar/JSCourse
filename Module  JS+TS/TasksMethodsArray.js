@@ -105,9 +105,15 @@ console.log(isValueIncluded); // true
 //  Создайте функцию, которая проверяет, содержит ли массив хотя бы одно отрицательное число, используя метод includes.
 
 const array2 = [1, 2, 3, -4, 5];
-const hasNegativeNumber = array2.some(item => item < 0)// используем метод some вместо includes потому что метод some проверяет массив на надичие отрицательного числа,
-// а метод includes проверяет содержит ли массив определенный элемент(для того чтобы использовать метод includes нужно тогда писать так array1.includes(-4))
+const hasNegativeNumber = array2.includes(array2.find(num=> num < 0));
 console.log(hasNegativeNumber); // true
+
+
+
+//const array2 = [1, 2, 3, -4, 5];
+//const hasNegativeNumber = array2.some(item => item < 0)// используем метод some вместо includes потому что метод some проверяет массив на надичие отрицательного числа,
+// а метод includes проверяет содержит ли массив определенный элемент(для того чтобы использовать метод includes нужно тогда писать так array1.includes(-4))
+//console.log(hasNegativeNumber); // true
 
 //  Реализуйте программу, которая проверяет, содержит ли массив определенную строку, используя метод includes.
 
