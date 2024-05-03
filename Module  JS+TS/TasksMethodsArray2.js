@@ -36,8 +36,8 @@ console.log(max); // 8
 // Сортировка элементов массива в обратном порядке:
 
 const array4 = [1, 5, 2, 8, 3];
-const sortedArray = array4.sort((a, b) => a - b).reverse();// метод sort сортитует массив по
-// порядку, а потом метод reverse устанавливает элементы в обратном порядке
+const sortedArray = array4.sort((a, b) => b - a);// метод sort сортитует массив по
+// порядку и устанавливает элементы в обратном порядке
 console.log(sortedArray); // [8, 5, 3, 2, 1]
 
 
