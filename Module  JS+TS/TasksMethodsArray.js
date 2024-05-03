@@ -263,3 +263,10 @@ console.log(people5); // [{ name: "Alice", age: 25 }, { name: "Charlie", age: 30
 
 
 
+
+
+
+
+
+
+
