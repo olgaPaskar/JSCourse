@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вычисление факториала</title>
+</head>
+<body>
+<script>
+    // Создайте программу, которая запрашивает у пользователя число и выводит на экран его факториал.
+    const number = parseInt(prompt("Введите число для вычисления факториала:"));// запрос на ввод числа
+
+    if (isNaN(number) || number < 0) { // проверка на корретность ввода числа
+        alert("Вы ввели некорректное значение. Пожалуйста, введите неотрицательное число.");
+    } else {
+        let factorial = 1;
+        for (let i = 2; i <= number; i++) { // после ввода и проверки на корректность производим вычисление факториала
+            factorial *= i;
+        }
+        alert(`Факториал числа ${number} равен ${factorial}`); // выводим результат
+    }
+
+</script>
+</body>
+</html>
